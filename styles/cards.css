@@ -1,0 +1,250 @@
+/******* COLOURS *******/
+/***** SIZES, MARGINS & PADDINGS *****/
+/******* CARDS 		 *******/
+/******* 			 *******/
+/******* 			 *******/
+/******* 			 *******/
+/* line 44, ../sass/cards.scss */
+.cards {
+  margin-top: 20px;
+}
+
+/* line 48, ../sass/cards.scss */
+.cards p {
+  text-align: center;
+}
+
+/* line 51, ../sass/cards.scss */
+.card1-1 {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: 1280px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* line 63, ../sass/cards.scss */
+.card1-2 {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: 96%;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* line 75, ../sass/cards.scss */
+.card1-4 {
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: 92%;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+/* line 91, ../sass/cards.scss */
+.cardImageFull {
+  width: 100%;
+  padding: 1% 0% 3% 0%;
+}
+
+/* line 97, ../sass/cards.scss */
+.cardImageFull img {
+  width: 100%;
+}
+
+/* line 101, ../sass/cards.scss */
+.cardImageHalf {
+  width: 45%;
+  margin: 2.5%;
+}
+
+/* line 105, ../sass/cards.scss */
+.cardImageHalf img {
+  width: 100%;
+}
+
+/* line 109, ../sass/cards.scss */
+.cardImageFull img {
+  width: 100%;
+}
+
+/* line 113, ../sass/cards.scss */
+.cardButtonMore {
+  width: 50%;
+  margin: auto;
+}
+
+/* line 125, ../sass/cards.scss */
+.card1-4-inside {
+  margin: 0 auto;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: 280px;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+/* line 138, ../sass/cards.scss */
+.card1-4-inside h1 {
+  padding: 10px 10px 10px 20px !important;
+}
+
+/* line 142, ../sass/cards.scss */
+.card3-4 {
+  float: right;
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: 915px;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+/* line 155, ../sass/cards.scss */
+.card3-4-inside {
+  margin: 0 auto;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: 915px;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+/* line 168, ../sass/cards.scss */
+.card3-4-inside h1 {
+  padding: 10px 10px 10px 20px !important;
+}
+
+/* line 171, ../sass/cards.scss */
+.card1-3 {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: 358px;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+/* line 184, ../sass/cards.scss */
+.card1-3-social {
+  margin: 0 auto;
+  margin-right: 38px;
+  margin-left: 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.05s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: 175px;
+  height: 175px;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+/* line 200, ../sass/cards.scss */
+.card-link:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0s;
+}
+
+/* line 205, ../sass/cards.scss */
+.card h1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 20%;
+  margin: auto;
+}
+
+/* line 216, ../sass/cards.scss */
+.cardHeader {
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+/* line 222, ../sass/cards.scss */
+.cardHeader img {
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px 10px 10px 20px;
+}
+
+/* line 231, ../sass/cards.scss */
+.cardHeaderSinglePage {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+/* line 235, ../sass/cards.scss */
+.cardHeaderSinglePage img {
+  width: 2%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+/* line 242, ../sass/cards.scss */
+.greyHeader {
+  background-color: #95A5A6;
+}
+
+/* line 245, ../sass/cards.scss */
+.cardHeader h1 {
+  text-align: left;
+  padding: 10px 10px 10px 20px;
+  margin-top: 0;
+}
+
+/* line 251, ../sass/cards.scss */
+.cardContent p {
+  color: #333333;
+  text-align: left;
+  padding: 10px 20px 20px 20px;
+  margin: 0;
+}
+
+/* line 257, ../sass/cards.scss */
+.client-desc h3, .client-desc p {
+  text-align: center !important;
+}
+
+/* line 261, ../sass/cards.scss */
+.cardContent a {
+  color: #C0392B;
+  /*text-align: left;
+  padding: $pPadding;*/
+}

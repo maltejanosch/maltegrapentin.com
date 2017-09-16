@@ -1,0 +1,327 @@
+/******* COLOURS *******/
+/***** SIZES, MARGINS & PADDINGS *****/
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,700");
+/* line 31, ../sass/style.scss */
+.rotate {
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/***** FONTS *****/
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,700);
+  font-weight: 400;
+}
+/* line 60, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6, p, a, span {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* line 63, ../sass/style.scss */
+html {
+  width: 100vw;
+}
+
+/* line 67, ../sass/style.scss */
+body {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+/* line 72, ../sass/style.scss */
+#pageContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+}
+
+/* line 80, ../sass/style.scss */
+#siteContainer {
+  height: 100vh;
+  position: absolute;
+  box-shadow: 8px 0px 8px rgba(0, 0, 0, 0.26);
+  overflow: hidden;
+}
+
+/* line 87, ../sass/style.scss */
+#siteContainerAbout {
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* line 93, ../sass/style.scss */
+.homepage {
+  width: 80vw;
+  top: 0;
+  left: 0;
+  background: #f3f3f3;
+  z-index: 5;
+}
+
+/* line 100, ../sass/style.scss */
+.concept {
+  width: 80vw;
+  top: 0;
+  left: 5%;
+  background: #3498DB;
+  z-index: 4;
+}
+
+/* line 107, ../sass/style.scss */
+.conceptExtra {
+  top: 100vh;
+  width: 100vw;
+  display: none;
+  background: #3498DB;
+}
+
+/* line 114, ../sass/style.scss */
+.frontEnd {
+  width: 80vw;
+  top: 0;
+  left: 10%;
+  background: #FEC606;
+  z-index: 3;
+}
+
+/* line 121, ../sass/style.scss */
+.design {
+  width: 80vw;
+  top: 0;
+  left: 15%;
+  background: #FD5B03;
+  z-index: 2;
+}
+
+/* line 128, ../sass/style.scss */
+.about {
+  width: 80vw;
+  top: 0;
+  left: 20%;
+  background: #ECF0F1;
+  z-index: 1;
+}
+
+/* line 136, ../sass/style.scss */
+.siteLogo {
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+}
+
+/* line 143, ../sass/style.scss */
+.siteLogo img {
+  width: 100%;
+  position: absolute;
+  right: 12%;
+  top: 1%;
+}
+
+/* line 150, ../sass/style.scss */
+.contentContainer {
+  width: 90%;
+  margin-left: 2.5%;
+  margin-right: 6%;
+}
+
+/* line 156, ../sass/style.scss */
+.contentContainerExtra {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  height: 95vh;
+}
+
+/** HEADERS **/
+/* line 167, ../sass/style.scss */
+.orange {
+  background: #FD5B03;
+}
+
+/* line 170, ../sass/style.scss */
+.blue {
+  background: #3498DB;
+}
+
+/* line 173, ../sass/style.scss */
+.black {
+  background: #333333;
+}
+
+/* line 176, ../sass/style.scss */
+.orange h1, .blue h1, .black h1 {
+  color: #FFFFFF;
+  font-weight: 200;
+  font-family: 'Work Sans', sans-serif;
+  padding: 2%;
+}
+
+/** Card Container **/
+/* line 186, ../sass/style.scss */
+.cardContent p {
+  color: #333333;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
+}
+
+/** HOMEPAGE **/
+/* line 201, ../sass/style.scss */
+.portraitNameContainer {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+/* line 209, ../sass/style.scss */
+.portraitContainer {
+  position: absolute;
+  right: 50px;
+  top: 15vh;
+}
+
+/* line 215, ../sass/style.scss */
+.nameContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 31%;
+  right: 105px;
+}
+
+/* line 222, ../sass/style.scss */
+.nameBox {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);
+  position: absolute;
+  width: auto;
+  padding: 0 2% 0 2%;
+}
+
+/* line 230, ../sass/style.scss */
+.nameBox h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 10px;
+  width: 100%;
+}
+
+/* line 242, ../sass/style.scss */
+.malte {
+  background: #FD5B03;
+  z-index: 2;
+  right: 72px;
+  top: 100px;
+}
+
+/* line 251, ../sass/style.scss */
+.janosch {
+  background: #FEC606;
+  z-index: 1;
+  right: 0;
+  top: 150px;
+}
+
+/* line 258, ../sass/style.scss */
+.grapentin {
+  background: #3498DB;
+  z-index: 2;
+  right: -55px;
+  top: 200px;
+}
+
+/* line 266, ../sass/style.scss */
+.menuListContainer {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+/* line 271, ../sass/style.scss */
+.menuList {
+  list-style-type: none;
+  padding-left: 1%;
+  margin-top: 25%;
+}
+
+/* line 277, ../sass/style.scss */
+.menuList h2 {
+  font-weight: 400;
+  margin-top: 2%;
+  margin-bottom: 0;
+  padding-left: 5%;
+}
+
+/* line 284, ../sass/style.scss */
+.menuItem {
+  display: -webkit-box;
+  margin: 0;
+  padding: 4% 0 4% 0;
+  cursor: pointer;
+}
+
+/* line 291, ../sass/style.scss */
+.menuItem img {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 296, ../sass/style.scss */
+.listConcept h2 {
+  color: #3498DB;
+}
+
+/* line 300, ../sass/style.scss */
+.listFrontEnd h2 {
+  color: #FEC606;
+}
+
+/* line 304, ../sass/style.scss */
+.listDesign h2 {
+  color: #FD5B03;
+}
+
+/* line 308, ../sass/style.scss */
+.listAbout h2 {
+  color: #333333;
+}
+
+/* line 312, ../sass/style.scss */
+.siteText {
+  position: relative;
+  margin-top: 120px;
+  margin-right: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* line 321, ../sass/style.scss */
+.blackText {
+  color: #333333;
+}
+
+/* line 326, ../sass/style.scss */
+.whatImg {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 331, ../sass/style.scss */
+.whatImg img {
+  width: 100%;
+}

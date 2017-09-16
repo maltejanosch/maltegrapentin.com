@@ -1,0 +1,265 @@
+/******* COLOURS *******/
+
+$cloud: #ECF0F1;
+$cement: #95A5A6; 
+$midnightblue: #2c3e50;
+$THEblue: #123456;
+$red : #C0392B;
+$pissyellow: #F1C40F;
+$yellow: #ffd835;
+$green: #01853A;
+$white: #F2F2F2;
+$black: #333333;
+$real-white: #FFFFFF;
+$margin : 0 auto;
+$s2orange: #FE4716;
+
+$shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+
+$shadowclick: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+/***** SIZES, MARGINS & PADDINGS *****/
+
+$left: 16.666%;
+$right: 16.666%;
+$full: 66.666%;
+$col2: 46.875%;	
+$col2side: 3.125%;
+$col2col4: 21.875%;
+$topmargin: 20px;
+
+$pPadding-alone: 20px 20px 20px 20px;
+$pPadding: 10px 20px 20px 20px;
+$h1Padding: 10px 10px 10px 20px;
+
+
+
+/******* CARDS 		 *******/
+/******* 			 *******/
+/******* 			 *******/
+/******* 			 *******/
+
+
+.cards{
+	margin-top: $topmargin;
+}
+
+.cards p{
+	text-align: center;
+}
+.card1-1{
+	margin: $margin;
+	background-color: $real-white;
+	//text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	max-width: 1280px;
+	width: 100%;
+	margin-top: $topmargin;
+	position: relative;
+}
+.card1-2{
+	margin: $margin;
+	background-color: $real-white;
+	text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	max-width: 96%;
+	width: 100%;
+	margin-top: $topmargin;
+	position: relative;
+}
+.card1-4{
+	background-color: $real-white;
+	text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	width: 92%;
+	margin-top: $topmargin;
+	display: block;
+	position: relative;
+}
+.conceptCards{
+	
+}
+
+
+.cardImageFull{
+	width: 100%;
+	padding: 1% 0% 3% 0%;
+	
+}
+
+.cardImageFull img{
+	width: 100%;
+}
+
+.cardImageHalf{
+	    width: 45%;
+    margin: 2.5%;
+}
+.cardImageHalf img{
+	width: 100%;
+}
+
+.cardImageFull img{
+	width: 100%;
+}
+
+.cardButtonMore{
+	width: 50%;
+	margin: auto;
+}
+
+.cardButtonMore img{
+
+
+}
+
+
+
+.card1-4-inside{
+	margin: $margin;
+	//background-color: $real-white;
+	text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	max-width: 280px;
+	width: 100%;
+	margin-top: $topmargin;
+	display: block;
+	position: relative;
+}
+.card1-4-inside h1{
+	padding: 10px 10px 10px 20px!important;
+}
+
+.card3-4{
+	float: right;
+	background-color: $real-white;
+	text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	max-width: 915px;
+	width: 100%;
+	margin-top: $topmargin;
+	display: block;
+	position: relative;
+}
+.card3-4-inside{
+	margin: $margin;
+	//background-color: $real-white;
+	text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	max-width: 915px;
+	width: 100%;
+	margin-top: $topmargin;
+	display: block;
+	position: relative;
+}
+.card3-4-inside h1{
+	padding: 10px 10px 10px 20px !important;
+}
+.card1-3{
+	margin: $margin;
+	background-color: $real-white;
+	text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	max-width: 358px;
+	width: 100%;
+	margin-top: $topmargin;
+	display: block;
+	position: relative;
+}
+.card1-3-social{
+	margin: $margin;
+	margin-right: 38px;
+	margin-left: 20px; 
+	background-color: $real-white;
+	text-align: center;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	width: 175px;
+	height: 175px;
+	margin-top: $topmargin;
+	display: block;
+	position: relative;
+}
+
+.card-link:hover{
+		box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+        transition-delay: 0s;
+}
+
+.card h1 {
+ 	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 20%;
+    margin: auto;
+}
+
+.cardHeader{
+	//background-color: $cement;
+	letter-spacing: 1px;
+	box-shadow: $shadow;
+}
+
+.cardHeader img{
+	width: 25%;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: $h1Padding;
+
+}
+
+.cardHeaderSinglePage{
+	box-shadow: $shadow;
+}
+
+.cardHeaderSinglePage img{
+	width: 2%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+
+
+}
+.greyHeader{
+	background-color: $cement;
+}
+.cardHeader h1{
+	text-align: left;
+	padding: $h1Padding;
+	margin-top: 0;
+}
+
+.cardContent p{
+	color: $black;
+	text-align: left;
+	padding: $pPadding;
+	margin: 0;
+}
+.client-desc h3, .client-desc  p {
+    text-align: center !important;
+}
+
+.cardContent a{
+	color: $red;
+	/*text-align: left;
+	padding: $pPadding;*/
+}
