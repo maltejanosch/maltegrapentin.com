@@ -16,6 +16,8 @@ $s2orange: #FE4716;
 
 $shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
+*.icon-white {color: $white};
+
 
 $shadowclick: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -31,8 +33,11 @@ $topmargin: 20px;
 
 $pPadding-alone: 20px 20px 20px 20px;
 $pPadding: 10px 20px 20px 20px;
+$pPadding-1-8:0px 0px 6px 6px;
 $h1Padding: 10px 10px 10px 20px;
 
+
+ 
 
 
 /******* CARDS 		 *******/
@@ -48,19 +53,19 @@ $h1Padding: 10px 10px 10px 20px;
 .cards p{
 	text-align: center;
 }
-.card1-1{
+.card-1-1{
 	margin: $margin;
 	background-color: $real-white;
 	//text-align: center;
 	transition: $shadowclick;
     transition-delay: 0.05s;
     box-shadow: $shadow;
-	max-width: 1280px;
+	//max-width: 1280px;
 	width: 100%;
 	margin-top: $topmargin;
 	position: relative;
 }
-.card1-2{
+.card-1-2{
 	margin: $margin;
 	background-color: $real-white;
 	text-align: center;
@@ -72,13 +77,25 @@ $h1Padding: 10px 10px 10px 20px;
 	margin-top: $topmargin;
 	position: relative;
 }
-.card1-4{
+.card-1-4{
 	background-color: $real-white;
 	text-align: center;
 	transition: $shadowclick;
     transition-delay: 0.05s;
     box-shadow: $shadow;
-	width: 92%;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: $topmargin;
+	display: block;
+	position: relative;
+}
+.card-1-8{
+	background-color: $real-white;
+	transition: $shadowclick;
+    transition-delay: 0.05s;
+    box-shadow: $shadow;
+	width: 96%;
+	margin-left: 2%;
 	margin-top: $topmargin;
 	display: block;
 	position: relative;
@@ -87,6 +104,13 @@ $h1Padding: 10px 10px 10px 20px;
 	
 }
 
+.work-card{
+	line-height: 200px;
+}
+.work-card img {
+    width: 60%;
+    vertical-align: middle;
+}
 
 .cardImageFull{
 	width: 100%;
@@ -110,19 +134,11 @@ $h1Padding: 10px 10px 10px 20px;
 	width: 100%;
 }
 
-.cardButtonMore{
-	width: 50%;
-	margin: auto;
-}
-
-.cardButtonMore img{
-
-
-}
 
 
 
-.card1-4-inside{
+
+.card-1-4-inside{
 	margin: $margin;
 	//background-color: $real-white;
 	text-align: center;
@@ -135,27 +151,26 @@ $h1Padding: 10px 10px 10px 20px;
 	display: block;
 	position: relative;
 }
-.card1-4-inside h1{
+.card-1-4-inside h1{
 	padding: 10px 10px 10px 20px!important;
 }
 
-.card3-4{
+.card-3-4{
 	float: right;
 	background-color: $real-white;
-	text-align: center;
+	//text-align: center;
 	transition: $shadowclick;
     transition-delay: 0.05s;
     box-shadow: $shadow;
-	max-width: 915px;
 	width: 100%;
 	margin-top: $topmargin;
 	display: block;
 	position: relative;
 }
-.card3-4-inside{
+.card-3-4-inside{
 	margin: $margin;
 	//background-color: $real-white;
-	text-align: center;
+	//text-align: center;
 	transition: $shadowclick;
     transition-delay: 0.05s;
     box-shadow: $shadow;
@@ -165,10 +180,10 @@ $h1Padding: 10px 10px 10px 20px;
 	display: block;
 	position: relative;
 }
-.card3-4-inside h1{
+.card-3-4-inside h1{
 	padding: 10px 10px 10px 20px !important;
 }
-.card1-3{
+.card-1-3{
 	margin: $margin;
 	background-color: $real-white;
 	text-align: center;
@@ -181,7 +196,7 @@ $h1Padding: 10px 10px 10px 20px;
 	display: block;
 	position: relative;
 }
-.card1-3-social{
+.card-1-3-social{
 	margin: $margin;
 	margin-right: 38px;
 	margin-left: 20px; 
@@ -211,12 +226,20 @@ $h1Padding: 10px 10px 10px 20px;
     width: 80%;
     height: 20%;
     margin: auto;
+    font-weight: 400;
 }
 
 .cardHeader{
 	//background-color: $cement;
 	letter-spacing: 1px;
 	box-shadow: $shadow;
+}
+
+.cardHeaderIcon{
+	box-shadow: $shadow;
+	text-align: center;
+	color: $white;
+
 }
 
 .cardHeader img{
@@ -248,7 +271,29 @@ $h1Padding: 10px 10px 10px 20px;
 	margin-top: 0;
 }
 
+.cardHeader h2{
+	text-align: center;
+	color: $white;
+	padding: 5px 0px 5px 0px;
+}
+
+
+
 .cardContent p{
+	color: $black;
+	text-align: left;
+	padding: $pPadding;
+	margin: 0;
+}
+
+.cardContent-1-8 p{
+	color: $black;
+	text-align: left;
+	padding: $pPadding-1-8;
+	margin: 0;
+}
+
+.cardContent h3{
 	color: $black;
 	text-align: left;
 	padding: $pPadding;
@@ -263,3 +308,7 @@ $h1Padding: 10px 10px 10px 20px;
 	/*text-align: left;
 	padding: $pPadding;*/
 }
+.centerer {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }

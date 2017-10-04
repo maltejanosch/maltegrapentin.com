@@ -14,9 +14,31 @@ module.exports = function(grunt) {
                 files: '**/*.scss',
                 tasks: ['compass']
             }
-        }
-    });
+        },
+        cssmin: {
+           dist: {
+              options: {
+                 banner: '/*! MyLib.js 1.0.0 | Aurelio De Rosa (@AurelioDeRosa) | MIT Licensed */'
+              },
+              files: {
+                 'comp/style.min.css': ['style/responsive.css', 'styles/style.css', 'styles/cards.css']
+              }
+          }
+        },
+        
+          uglify: {
+            my_target: {
+              files: {
+                'comp/script.min.js': ['scripts/script.js']
+              }
+            }
+          }
+        });
+    
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.registerTask('default',['watch']);
+
 }
