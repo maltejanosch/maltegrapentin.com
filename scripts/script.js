@@ -1,38 +1,65 @@
+var home = true;
+var slide1 = true;
+var slide2 = true;
+var slide3 = true;
+var back = true;
 
 
- window.onload = function() {
+
+window.onload = function() {
+  preLoadSlider();
+}
+
+function preLoadSlider(){
   var url = window.location.hash;
   var hash = window.location.href;
-  var hashList = new Array ("Services", "Work", "AboutMe", "Contact");
+  //var hashList = new Array ("Services", "Work", "AboutMe", "Contact");
 
-
-  console.log("The hash is " + url);
-  console.log("The url is " + hash);
-  console.log(hashList);
+  //console.log("The hash is " + url);
+  //console.log("The url is " + hash);
+  //console.log(hashList);
 
   if(hash.indexOf("Services") >= 0) {
       $('.homepage').animate({'left' : '-75%'}, {duration: 250});
+      var home = false;
+      var slide1 = true;
+      var slide2 = true;
+      var slide3 = true;
+
   }else if(hash.indexOf("Work") >= 0) {
       $('.homepage').animate({'left' : '-75%'}, {duration: 250});
       $('.slide1').animate({'left' : '-70%'}, {duration: 250});
+      var home = false;
+      var slide1 = false;
+      var slide2 = true;
+      var slide3 = true;
   }else if(hash.indexOf("AboutMe") >= 0) {
       $('.homepage').animate({'left' : '-75%'}, {duration: 250});
       $('.slide1').animate({'left' : '-70%'}, {duration: 250});
       $('.slide2').animate({'left' : '-65%'}, {duration: 250});
+      var home = false;
+      var slide1 = false;
+      var slide2 = false;
+      var slide3 = true;
+      console.log("home = " + home + " slide1 = " + slide1 + " slide2 = " + slide2 + " slide3 = " + slide3 );
   }else if(hash.indexOf("Contact") >= 0) {
     $('.homepage').animate({'left' : '-75%'}, {duration: 250});
     $('.slide1').animate({'left' : '-70%'}, {duration: 250});
     $('.slide2').animate({'left' : '-65%'}, {duration: 250});
     $('.slide3').animate({'left' : '-60%'}, {duration: 250});
+    var home = false;
+    var slide1 = false;
+    var slide2 = false;
+    var slide3 = false;   
+    var back = true; 
+    console.log("home is" +  home + slide1 + slide2 + slide3 + back);
   }
+
 }
 
 
-    
-
-
 $( document ).ready(function() {
-  slider();
+    slider();
   extraContent();
 });
 
@@ -40,14 +67,8 @@ $( document ).ready(function() {
 
 function slider(){
 
- var home = true;
-var slide1 = true;
-var slide2 = true;
-var slide3 = true;
-
-
   $('.home').click(function(){
-
+    console.log("home was clicked");
     if(!home){
       $('.homepage').animate({'left' : '0%'}, {duration: 250}); 
       $('.slide1').animate({'left' : '5%'}, {duration: 250});
@@ -61,12 +82,15 @@ var slide3 = true;
       slide1 = true;
       slide2 = true;
       slide3 = true;
-      
+      console.log("home = " + home + " slide1 = " + slide1 + " slide2 = " + slide2 + " slide3 = " + slide3 );
+    }else{
+      $('.homepage').animate({'left' : '0%'}, {duration: 250}); 
+      home = true;
     }
   })
 
   $('.slider1').click(function(){
-
+      console.log("slide1 was clicked");
       window.location.hash=""
       window.location.href.split('#')[0]
 
@@ -84,6 +108,7 @@ var slide3 = true;
     }
     else{
       $('.homepage').animate({'left' : '-75%'}, {duration: 250});
+      $('.slide1').animate({'left' : '5%'}, {duration: 250});
       home = false;
       
     }
@@ -91,6 +116,7 @@ var slide3 = true;
   })
 
   $('.slider2').click(function(){
+    console.log("slider2 clicked");
 
       window.location.hash=""
       window.location.href.split('#')[0]
@@ -108,14 +134,15 @@ var slide3 = true;
     else{
       $('.homepage').animate({'left' : '-75%'}, {duration: 250});
       $('.slide1').animate({'left' : '-70%'}, {duration: 250});
+      $('.slide2').animate({'left' : '10%'}, {duration: 250});  
       home = false;
       slide1 = false;
-      
     }
 
   })
 
   $('.slider3').click(function(){
+    console.log("slide3 was clicked");
 
     window.location.hash=""
     window.location.href.split('#')[0]
@@ -131,6 +158,7 @@ var slide3 = true;
       $('.homepage').animate({'left' : '-75%'}, {duration: 250});
       $('.slide1').animate({'left' : '-70%'}, {duration: 250});
       $('.slide2').animate({'left' : '-65%'}, {duration: 250});
+      $('.slide3').animate({'left' : '15%'}, {duration: 250});    
       home = false;
       slide1 = false;
       slide2 = false;
@@ -140,22 +168,29 @@ var slide3 = true;
   })
 
   $('.back').click(function(){
-
+    console.log("back was clicked");
+    console.log("states" + home + slide1 + slide2 + slide3);
     window.location.hash=""
       window.location.href.split('#')[0]
       
       var stateObj = { foo: "bar" };
       history.pushState(stateObj, "page 1", "#Contact"); 
 
+
+
+
     $('.homepage').animate({'left' : '-75%'}, {duration: 250});
     $('.slide1').animate({'left' : '-70%'}, {duration: 250});
     $('.slide2').animate({'left' : '-65%'}, {duration: 250});
     $('.slide3').animate({'left' : '-60%'}, {duration: 250});
+
+
     home = false;
     slide1 = false;
     slide2 = false;
     slide3 = false;
     
+
   })
 
 };
@@ -183,36 +218,6 @@ function extraContent()
   var digitalherald = true;
   var expanded = true;
   
-  // $('.cardButtonMore').click(function()
-  //   {                        
-  //       if (!expanded)
-  //       {    
-          
-  //           $('.conceptExtra').animate({'top':'250%'}, {duration: 250});                              
-  //           $('#pageContainer').animate({'top':'0%'}, {duration: 250});            
-  //           expanded = true;
-            
-  //           window.location.hash=""
-  //           window.location.href.split('#')[0]
-  //           var stateObj = { foo: "bar" };
-  //           history.pushState(stateObj, "page 1", "#work"); 
-  //           setTimeout(
-  //             function() 
-  //             {
-  //               $('.conceptExtra').css('display', 'none');
-  //             }, 250);    
-  //       }
-  //       else
-  //       {
-  //         $('.conceptExtra').css('display', 'block');
-  //         $('.conceptExtra').animate({'top':'00%'}, {duration: 250});
-  //          $('#pageContainer').animate({'top':'-250%'}, {duration: 250});
-  //           expanded = false;
-  //           var stateObj = { foo: "bar" };
-  //           history.pushState(stateObj, "page 1", "#extra"); 
-                                   
-  //       }
-  //   });
 
   $('.SinnerSchrader').click(function()
     {                        
@@ -468,12 +473,6 @@ $('.fheels').click(function()
 
 
  };
-
-
-
-// if window.location = "http://localhost:8888/mjg2/#extra"{
-//   $('.conceptExtra').animate({'top':'250%'}, {duration: 250});                              
-// }
 
 
 
