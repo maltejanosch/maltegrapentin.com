@@ -16,7 +16,7 @@ $s2orange: #FE4716;
 
 $shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
-*.icon-white {color: $white};
+*.icon-white {color: $real-white};
 
 
 $shadowclick: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,18 +112,21 @@ $h1Padding: 10px 10px 10px 20px;
     vertical-align: middle;
 }
 
+.aboutMeCard{
+	height: 80%;
+}
+
 .cardImageFull{
 	width: 100%;
-	padding: 1% 0% 3% 0%;
-	
 }
 
 .cardImageFull img{
 	width: 100%;
+	vertical-align: top;
 }
 
 .cardImageHalf{
-	    width: 45%;
+	width: 45%;
     margin: 2.5%;
 }
 .cardImageHalf img{
@@ -153,6 +156,11 @@ $h1Padding: 10px 10px 10px 20px;
 }
 .card-1-4-inside h1{
 	padding: 10px 10px 10px 20px!important;
+}
+
+.card-1-4 p{
+	padding: $pPadding;
+	font-size: .9em;
 }
 
 .card-3-4{
@@ -245,9 +253,7 @@ $h1Padding: 10px 10px 10px 20px;
 .cardHeader img{
 	width: 25%;
 	margin: 0 auto;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	padding: $h1Padding;
+	//padding: $h1Padding;
 
 }
 
@@ -256,11 +262,9 @@ $h1Padding: 10px 10px 10px 20px;
 }
 
 .cardHeaderSinglePage img{
-	width: 2%;
+	width: 100%;
 	margin-top: 0%;
 	margin-bottom: 0%;
-
-
 }
 .greyHeader{
 	background-color: $cement;
@@ -273,6 +277,7 @@ $h1Padding: 10px 10px 10px 20px;
 
 .cardHeader h2{
 	text-align: center;
+	font-weight: 200;
 	color: $white;
 	padding: 5px 0px 5px 0px;
 }
