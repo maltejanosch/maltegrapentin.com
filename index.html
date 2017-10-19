@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>MJG REDESIGN</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta name="theme-color" content="#95A5A6" />
+	<meta name="theme-color" content="#FD5B03" />
 	<link rel="icon" sizes="192x192" href="favicon.ico">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/base-min.css">
 
@@ -21,12 +21,13 @@
 	<!--<![endif]-->
 
 	<!-- STYLESHEETS FULL -->
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/cards.css">
-	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css"> -->
 
 	<!-- STYLESSHEETS MINIFIED -->
-	<!-- <link rel="stylesheet" type="text/css" href="comp/style.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="comp/style.min.css">
+	<link rel="stylesheet" type="text/css" href="comp/responsive.min.css">
 
 	<!-- GOOGLE FONTS -->
 	<link href='//fonts.googleapis.com/css?family=Work+Sans:100,200,400,700' rel='stylesheet' type='text/css'>
@@ -46,6 +47,42 @@
 
 
 <body>
+
+	<div id="panel" class="">
+  <header>
+    <div class="contentContainer">
+			<div class="pure-g contentHomepage">
+				<div class="menuListContainerMobileOpen">
+					<a href="index.html">
+						<div class="menuHomeMobile table-center">
+							<img src="img/services.png"><h1>Home</h1>
+						</div>
+					</a>
+					<a href="services.html">
+						<div class="menuServicesMobile table-center">
+							<img src="img/services.png"><h1>Services</h1>
+						</div>
+					</a>
+					<a href="work.html">
+						<div class="menuWorkMobile table-center">
+							<img src="img/work.png"><h1>Work</h1>
+						</div>
+					</a>
+					<a href="aboutme.html">
+						<div class="menuAboutMobile table-center">
+							<img src="img/aboutme.png"><h1>About Me</h1>
+						</div>
+					</a>
+					<a href="contact.html">
+						<div class="menuContactMobile table-center">
+							<img src="img/contact_loc.png"><h1>Contact</h1>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+  </header>
+</div>
 
 <!-- MAIN PAGE CONATINER __ THIS IS WHERE THE SITE STARTS -->
 <div id="pageContainer">
@@ -815,14 +852,68 @@
 <!-- ////////////// -->
 
 
+
+<!-- ///////////////// -->
+<!-- MOBILE PAGE START -->
+<!-- ///////////////// -->
+<!-- ///////////////// -->
+
+
+<div id="pageContainerMobile">
+	<div id="siteContainerMobile" class="homepageMobile">
+		<div class="contentContainer">
+			<div class="pure-g contentHomepage">
+				<div class="pure-u-1 portraitNameContainer">
+					<div class="portraitContainer">
+						<img src="img/portrait2.png">
+					</div>
+					<div class="nameContainer">
+						<div class="nameBox malte">
+							<h1>Malte</h1>
+						</div>
+						<div class="janosch nameBox">
+							<h1>Janosch</h1>
+						</div>
+						<div class="grapentin nameBox">
+							<h1>Grapentin</h1>
+						</div>
+					</div>
+				</div>
+				<div class="menuListContainerMobile">
+					<a href="services.html">
+						<div class="menuServicesMobile table-center">
+							<img src="img/services.png"><h1>Services</h1>
+						</div>
+					</a>
+					<a href="work.html">
+						<div class="menuWorkMobile table-center">
+							<img src="img/work.png"><h1>Work</h1>
+						</div>
+					</a>
+					<a href="aboutme.html">
+						<div class="menuAboutMobile table-center">
+							<img src="img/aboutme.png"><h1>About Me</h1>
+						</div>
+					</a>
+					<a href="contact.html">
+						<div class="menuContactMobile table-center">
+							<img src="img/contact_loc.png"><h1>Contact</h1>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 <!-- ///////////// -->
 <!-- ///////////// -->
 <!--  GOOGLE MAPS  -->
 <!-- ///////////// -->
-
-
-
-
 <script>
       function initMap() {
         var uluru = {lat: 52.220760, lng: 6.895675};

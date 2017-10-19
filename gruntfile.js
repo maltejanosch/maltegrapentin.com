@@ -21,10 +21,12 @@ module.exports = function(grunt) {
                  banner: '/*! MyLib.js 1.0.0 | Aurelio De Rosa (@AurelioDeRosa) | MIT Licensed */'
               },
               files: {
-                 'comp/style.min.css': ['style/responsive.css', 'styles/style.css', 'styles/cards.css']
+                 'comp/style.min.css': ['styles/style.css', 'styles/cards.css'],
+                 'comp/responsive.min.css': ['styles/responsive.css']
               }
           }
         },
+
         
           uglify: {
             my_target: {

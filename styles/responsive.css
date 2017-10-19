@@ -1,67 +1,329 @@
-@media only screen and (min-width: 320px) and (max-width: 750px) {
-  /* line 8, ../sass/responsive.scss */
+/******* COLOURS *******/
+@media (max-width: 319px) {
+  /* line 31, ../sass/responsive.scss */
   body {
-    width: 100vw;
-    height: 100vh;
-    background-color: green;
-  }
-
-  /* line 14, ../sass/responsive.scss */
-  #siteContainer {
-    width: 100vw;
-    height: 50vh;
-  }
-
-  /* line 18, ../sass/responsive.scss */
-  .contentContainer {
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-
-  /* line 24, ../sass/responsive.scss */
-  .menuListContainer {
     display: none;
   }
-
-  /* line 27, ../sass/responsive.scss */
-  .nameContainer {
-    position: absolute;
+}
+@media only screen and (min-width: 801px) {
+  /* line 37, ../sass/responsive.scss */
+  #pageContainerMobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /*** MENU ***/
+  /* line 48, ../sass/responsive.scss */
+  header {
     width: 100%;
     height: 100%;
-    top: 15%;
-    right: 38%;
   }
 
-  /* line 35, ../sass/responsive.scss */
-  .portraitContainer {
+  /* line 53, ../sass/responsive.scss */
+  #panel {
+    width: 100%;
+    height: 90vh;
+    top: 10%;
     position: absolute;
-    top: 1%;
-    left: 40%;
+    z-index: 5;
+    left: -100%;
+    transition: all 300ms;
+    transition-timing-function: ease-in-out;
   }
 
-  /* line 41, ../sass/responsive.scss */
-  .home {
+  /* line 64, ../sass/responsive.scss */
+  .menu-open {
+    left: 0 !important;
+    width: 100%;
+    height: 90vh;
+    top: 10%;
+    display: block;
+    background: #eee;
+    min-height: 600px;
+    transition: all 300ms;
+    transition-timing-function: ease-in-out;
+    z-index: 15;
+  }
+
+  /***** FONTS *****/
+  @font-face {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+  }
+  /* line 99, ../sass/responsive.scss */
+  h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0px;
+  }
+
+  /* line 104, ../sass/responsive.scss */
+  h2 {
+    font-weight: 200;
+  }
+
+  /* line 108, ../sass/responsive.scss */
+  body {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  /* line 113, ../sass/responsive.scss */
+  #pageContainer {
     display: none;
   }
 
-  /* line 45, ../sass/responsive.scss */
-  .concept {
-    width: 100vw;
-    top: 50%;
+  /* line 117, ../sass/responsive.scss */
+  #siteContainer {
+    display: none !important;
   }
 
-  /* line 50, ../sass/responsive.scss */
-  .rotate {
-    /* Safari */
-    -webkit-transform: rotate(0deg);
-    /* Firefox */
-    -moz-transform: rotate(0deg);
-    /* IE */
-    -ms-transform: rotate(0deg);
-    /* Opera */
-    -o-transform: rotate(0deg);
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  /* line 121, ../sass/responsive.scss */
+  .contentContainer {
+    max-width: 100vw;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  /* line 127, ../sass/responsive.scss */
+  .subPageContentContainer {
+    padding-top: 20%;
+  }
+
+  /* line 131, ../sass/responsive.scss */
+  #pageContainerMobile {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* line 135, ../sass/responsive.scss */
+  #siteContainerMobile {
+    width: 100%;
+  }
+
+  /* line 140, ../sass/responsive.scss */
+  .homepageMobile {
+    background-color: #ECF0F1;
+  }
+
+  /* line 143, ../sass/responsive.scss */
+  .portraitNameContainer {
+    height: 51vh;
+  }
+
+  /* line 146, ../sass/responsive.scss */
+  .portraitContainer img {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  /* line 150, ../sass/responsive.scss */
+  .portraitContainer {
+    position: absolute;
+    right: 0%;
+    top: 0;
+  }
+
+  /* line 156, ../sass/responsive.scss */
+  .nameContainer {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0%;
+    left: 10%;
+  }
+
+  /* line 163, ../sass/responsive.scss */
+  .malte {
+    left: -10%;
+    right: 50%;
+  }
+
+  /* line 167, ../sass/responsive.scss */
+  .janosch {
+    left: -7.5%;
+    right: 45%;
+  }
+
+  /* line 171, ../sass/responsive.scss */
+  .grapentin {
+    left: -5%;
+    right: 40%;
+  }
+
+  /* line 176, ../sass/responsive.scss */
+  .menuListContainerMobileOpen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: #ECF0F1;
+  }
+
+  /* line 185, ../sass/responsive.scss */
+  .menuListContainerMobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 49vh;
+    background-color: #ECF0F1;
+  }
+
+  /* line 194, ../sass/responsive.scss */
+  .menuListContainerMobile h1, .headerMobile h1, .menuListContainerMobileOpen h1 {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    line-height: 200%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  /* line 205, ../sass/responsive.scss */
+  .table-center {
+    display: table;
+  }
+
+  /* line 208, ../sass/responsive.scss */
+  .menuHomeMobile {
+    background-color: #ECF0F1;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+    z-index: 5;
+    bottom: 80%;
+  }
+
+  /* line 217, ../sass/responsive.scss */
+  .menuHomeMobile img {
+    width: 10%;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+  }
+
+  /* line 224, ../sass/responsive.scss */
+  .menuServicesMobile {
+    background-color: #3498DB;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+    z-index: 4;
+    bottom: 60%;
+  }
+
+  /* line 233, ../sass/responsive.scss */
+  .menuServicesMobile img {
+    width: 10%;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+  }
+
+  /* line 239, ../sass/responsive.scss */
+  .menuWorkMobile {
+    background-color: #FEC606;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+    z-index: 3;
+    bottom: 40%;
+  }
+
+  /* line 248, ../sass/responsive.scss */
+  .menuWorkMobile img {
+    width: 10%;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+  }
+
+  /* line 254, ../sass/responsive.scss */
+  .menuAboutMobile {
+    background-color: #FD5B03;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+    z-index: 2;
+    bottom: 20%;
+  }
+
+  /* line 263, ../sass/responsive.scss */
+  .menuAboutMobile img {
+    width: 10%;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+  }
+
+  /* line 269, ../sass/responsive.scss */
+  .menuContactMobile {
+    background-color: #ECF0F1;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+    z-index: 1;
+    bottom: 0%;
+  }
+
+  /* line 278, ../sass/responsive.scss */
+  .menuContactMobile img {
+    width: 10%;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+  }
+
+  /* line 284, ../sass/responsive.scss */
+  .menuContactMobile h1, .menuHomeMobile h1 {
+    color: #333333;
+  }
+
+  /* line 288, ../sass/responsive.scss */
+  .headerMobile {
+    width: 100vw;
+    height: 10%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+    position: fixed;
+    z-index: 7;
+  }
+
+  /* line 295, ../sass/responsive.scss */
+  .headerMobile img {
+    height: 100%;
+    position: absolute;
+    right: 2%;
+  }
+
+  /* line 300, ../sass/responsive.scss */
+  .headerMobile h1 {
+    text-align: right;
+    padding-right: 5%;
+  }
+
+  /* line 305, ../sass/responsive.scss */
+  .menu-button-icon {
+    position: absolute;
+    left: 3%;
+    top: 30%;
+  }
+
+  /* line 310, ../sass/responsive.scss */
+  .hamburger-label {
+    padding-left: 123%;
+  }
+
+  /* line 315, ../sass/responsive.scss */
+  .serviceMobile {
+    background-color: #3498DB;
   }
 }

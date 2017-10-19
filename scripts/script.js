@@ -6,7 +6,7 @@ var slide2 = true;
 var slide3 = true;
 var back = true;
 var url = "";
-
+var menu = false;
 
 
 window.onload = function() {
@@ -58,6 +58,7 @@ function preLoadSlider(){
 $( document ).ready(function() {
     slider();
     extraContentNew();
+    mobileMenu();
 });
 
 /* If everything has loaded call the ability for the user to use the different sites as links */
@@ -206,6 +207,18 @@ function extraContentNew(){
     $(".fheelsExtra").removeClass("hidden");
   });
 }
+
+
+function mobileMenu(){
+var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    $('#panel').toggleClass("menu-open");
+    $('#menu').toggleClass("menuButton-open");
+  });
+}
+
+
 
 
 

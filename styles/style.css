@@ -19,28 +19,28 @@
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
-/* line 60, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6, p, a, span {
   font-family: 'Work Sans', sans-serif;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 h2 {
   font-weight: 200;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 html {
   width: 100vw;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 body {
   margin: 0 auto;
   width: 100vw;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 #pageContainer {
   width: 100vw;
   height: 100vh;
@@ -49,7 +49,7 @@ body {
   position: absolute;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 #siteContainer {
   height: 100vh;
   position: absolute;
@@ -57,14 +57,14 @@ body {
   overflow: hidden;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 #siteContainerAbout {
   height: 100vh;
   position: absolute;
   overflow: hidden;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .homepage {
   width: 80vw;
   top: 0;
@@ -73,7 +73,7 @@ body {
   z-index: 5;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .services {
   width: 80vw;
   top: 0;
@@ -82,7 +82,7 @@ body {
   z-index: 4;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .servicesExtra {
   top: 100vh;
   width: 100vw;
@@ -90,7 +90,7 @@ body {
   background: #3498DB;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .work {
   width: 80vw;
   top: 0;
@@ -99,7 +99,7 @@ body {
   z-index: 3;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .aboutme {
   width: 80vw;
   top: 0;
@@ -108,7 +108,7 @@ body {
   z-index: 2;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .contact {
   width: 80vw;
   top: 0;
@@ -117,7 +117,7 @@ body {
   z-index: 1;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .siteLogo {
   width: 5%;
   height: 100%;
@@ -125,7 +125,7 @@ body {
   right: 0%;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .siteLogo img {
   width: 100%;
   position: absolute;
@@ -133,14 +133,14 @@ body {
   top: 1%;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .contentContainer {
   width: 90%;
   margin-left: 2.5%;
   margin-right: 6%;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .contentContainerExtra {
   width: 95%;
   margin-left: 2.5%;
@@ -149,27 +149,32 @@ body {
 }
 
 /** HEADERS **/
-/* line 171, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .orange {
   background: #FD5B03;
 }
 
-/* line 174, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .blue {
   background: #3498DB;
 }
 
-/* line 177, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .yellow {
   background: #FEC606;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .black {
   background: #333333;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
+.cloud {
+  background: #ECF0F1;
+}
+
+/* line 187, ../sass/style.scss */
 .orange h1, .blue h1, .black h1, .yellow h1 {
   color: #FFFFFF;
   font-weight: 200;
@@ -178,7 +183,7 @@ body {
 }
 
 /** Card Container **/
-/* line 195, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .cardContent p {
   color: #333333;
   font-weight: 400;
@@ -187,21 +192,21 @@ body {
 }
 
 /** HOMEPAGE **/
-/* line 210, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .portraitNameContainer {
   overflow: hidden;
   position: relative;
   height: 100vh;
 }
 
-/* line 218, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .portraitContainer {
   position: absolute;
   right: 50px;
   top: 15vh;
 }
 
-/* line 224, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .nameContainer {
   position: absolute;
   width: 100%;
@@ -210,7 +215,7 @@ body {
   right: 105px;
 }
 
-/* line 231, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .nameBox {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);
   position: absolute;
@@ -218,7 +223,7 @@ body {
   padding: 0 2% 0 2%;
 }
 
-/* line 239, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .nameBox h1 {
   text-align: center;
   color: #FFFFFF;
@@ -261,54 +266,56 @@ body {
 
 /* line 280, ../sass/style.scss */
 .menuList {
+  position: absolute;
   list-style-type: none;
+  margin: 0;
   padding-left: 1%;
-  margin-top: 25%;
+  top: 15%;
 }
 
-/* line 286, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .menuList h2 {
   font-weight: 400;
-  margin-top: 2%;
+  margin-top: 8%;
   margin-bottom: 0;
   padding-left: 5%;
 }
 
-/* line 293, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .menuItem {
   display: -webkit-box;
   margin: 0;
-  padding: 4% 0 4% 0;
+  padding: 20% 0 4% 0;
   cursor: pointer;
 }
 
-/* line 300, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 .menuItem img {
   width: 50px;
   height: 50px;
 }
 
-/* line 305, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .listConcept h2 {
   color: #3498DB;
 }
 
-/* line 309, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .listFrontEnd h2 {
   color: #FEC606;
 }
 
-/* line 313, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 .listDesign h2 {
   color: #FD5B03;
 }
 
-/* line 317, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .listAbout h2 {
   color: #333333;
 }
 
-/* line 321, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .siteText {
   position: relative;
   margin-top: 120px;
@@ -318,73 +325,73 @@ body {
   font-size: 1em;
 }
 
-/* line 330, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .blackText {
   color: #333333;
 }
 
-/* line 335, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .whatImg {
   width: 40%;
   margin: 0 auto;
 }
 
-/* line 340, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 .whatImg img {
   width: 100%;
 }
 
-/* line 344, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .center h2 {
   text-align: center;
 }
 
 /***** WORK // WHAT I DID ****/
-/* line 351, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .backButton {
   width: 25%;
 }
 
-/* line 355, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .backButton img {
   width: 10%;
 }
 
-/* line 360, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 .hidden {
   display: none;
 }
 
-/* line 364, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .workExtraImgLogo {
   width: 100%;
 }
 
-/* line 367, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .workExtraImgLogo img {
   width: 50%;
   margin-left: 25%;
 }
 
 /***** ABOUT ME // WHO AM I ****/
-/* line 374, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 .portrait {
   width: 100%;
   vertical-align: top;
 }
 
-/* line 383, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 h2.iconHeader {
   text-align: center;
   color: #FFFFFF;
 }
 
-/* line 389, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .fa-white {
   color: #FFFFFF;
 }
 
-/* line 394, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 #map {
   height: 100%;
   width: 100%;
