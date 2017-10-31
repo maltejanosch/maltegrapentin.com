@@ -37,6 +37,9 @@ $shadowclick: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 	#pageContainerMobile{
 		display: none;
 	}
+	#panel{
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 800px){
@@ -47,12 +50,12 @@ $shadowclick: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
 header{
 	width: 100%;
-	height: 100%;
+	height: 50%;
 }
 
 #panel{
 	width: 100%;
-    height: 90vh;
+    height: 50vh;
     top: 10%;
 	position: absolute;
 	z-index: 5;
@@ -126,6 +129,7 @@ body{
 	}
 	.subPageContentContainer{
 		padding-top: 20%;
+		padding-bottom: 5%;
 	}
 
 	#pageContainerMobile{
@@ -180,6 +184,10 @@ body{
 		width: 100%;
 		height: 90vh;
 		background-color: $cloud;
+	}
+
+	.invisible{
+		overflow: hidden;
 	}
 
 	.menuListContainerMobile{
@@ -307,13 +315,30 @@ body{
 		left: 3%;
     	top: 30%;
 	}
+	.hamburger{
+		margin: 1%!important;
+	}
 	.hamburger-label{
 		padding-left: 123%;
 	}
 
-
 	.serviceMobile{
 		background-color: $light-blue;
+	}
+	.workMobile{
+		background-color: $yellow;
+	}
+	.work-card {
+    	line-height: 100px;
+	}
+	.aboutMobile{
+		background-color: $orange;
+	}
+	.contactMobile{
+		background-color: $cloud;
+	}
+	.cardContent-1-1 p{
+		text-align: center;
 	}
 
 

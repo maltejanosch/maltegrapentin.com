@@ -78,44 +78,49 @@
 }
 
 /* line 110, ../sass/cards.scss */
+.work-card:hover {
+  box-shadow: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* line 113, ../sass/cards.scss */
 .work-card img {
   width: 60%;
   vertical-align: middle;
 }
 
-/* line 115, ../sass/cards.scss */
+/* line 118, ../sass/cards.scss */
 .aboutMeCard {
   height: 80%;
 }
 
-/* line 119, ../sass/cards.scss */
+/* line 122, ../sass/cards.scss */
 .cardImageFull {
   width: 100%;
 }
 
-/* line 123, ../sass/cards.scss */
+/* line 126, ../sass/cards.scss */
 .cardImageFull img {
   width: 100%;
   vertical-align: top;
 }
 
-/* line 128, ../sass/cards.scss */
+/* line 131, ../sass/cards.scss */
 .cardImageHalf {
   width: 45%;
   margin: 2.5%;
 }
 
-/* line 132, ../sass/cards.scss */
+/* line 135, ../sass/cards.scss */
 .cardImageHalf img {
   width: 100%;
 }
 
-/* line 136, ../sass/cards.scss */
+/* line 139, ../sass/cards.scss */
 .cardImageFull img {
   width: 100%;
 }
 
-/* line 144, ../sass/cards.scss */
+/* line 147, ../sass/cards.scss */
 .card-1-4-inside {
   margin: 0 auto;
   text-align: center;
@@ -129,18 +134,18 @@
   position: relative;
 }
 
-/* line 157, ../sass/cards.scss */
+/* line 160, ../sass/cards.scss */
 .card-1-4-inside h1 {
   padding: 10px 10px 10px 20px !important;
 }
 
-/* line 161, ../sass/cards.scss */
+/* line 164, ../sass/cards.scss */
 .card-1-4 p {
   padding: 10px 20px 20px 20px;
   font-size: .9em;
 }
 
-/* line 166, ../sass/cards.scss */
+/* line 169, ../sass/cards.scss */
 .card-3-4 {
   float: right;
   background-color: #FFFFFF;
@@ -153,7 +158,7 @@
   position: relative;
 }
 
-/* line 178, ../sass/cards.scss */
+/* line 181, ../sass/cards.scss */
 .card-3-4-inside {
   margin: 0 auto;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,12 +171,12 @@
   position: relative;
 }
 
-/* line 191, ../sass/cards.scss */
+/* line 194, ../sass/cards.scss */
 .card-3-4-inside h1 {
   padding: 10px 10px 10px 20px !important;
 }
 
-/* line 194, ../sass/cards.scss */
+/* line 197, ../sass/cards.scss */
 .card-1-3 {
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -186,7 +191,7 @@
   position: relative;
 }
 
-/* line 207, ../sass/cards.scss */
+/* line 210, ../sass/cards.scss */
 .card-1-3-social {
   margin: 0 auto;
   margin-right: 38px;
@@ -203,13 +208,13 @@
   position: relative;
 }
 
-/* line 223, ../sass/cards.scss */
+/* line 226, ../sass/cards.scss */
 .card-link:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
   transition-delay: 0s;
 }
 
-/* line 228, ../sass/cards.scss */
+/* line 231, ../sass/cards.scss */
 .card h1 {
   position: absolute;
   top: 0;
@@ -222,50 +227,50 @@
   font-weight: 400;
 }
 
-/* line 240, ../sass/cards.scss */
+/* line 243, ../sass/cards.scss */
 .cardHeader {
   letter-spacing: 1px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-/* line 246, ../sass/cards.scss */
+/* line 249, ../sass/cards.scss */
 .cardHeaderIcon {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   text-align: center;
   color: #F2F2F2;
 }
 
-/* line 253, ../sass/cards.scss */
+/* line 256, ../sass/cards.scss */
 .cardHeader img {
   width: 25%;
   margin: 0 auto;
 }
 
-/* line 260, ../sass/cards.scss */
+/* line 263, ../sass/cards.scss */
 .cardHeaderSinglePage {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-/* line 264, ../sass/cards.scss */
+/* line 267, ../sass/cards.scss */
 .cardHeaderSinglePage img {
-  width: 100%;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  width: 20%;
+  margin: 1%;
+  max-width: 150px;
 }
 
-/* line 269, ../sass/cards.scss */
+/* line 272, ../sass/cards.scss */
 .greyHeader {
   background-color: #95A5A6;
 }
 
-/* line 272, ../sass/cards.scss */
+/* line 275, ../sass/cards.scss */
 .cardHeader h1 {
   text-align: left;
   padding: 10px 10px 10px 20px;
   margin-top: 0;
 }
 
-/* line 278, ../sass/cards.scss */
+/* line 281, ../sass/cards.scss */
 .cardHeader h2 {
   text-align: center;
   font-weight: 200;
@@ -273,7 +278,7 @@
   padding: 5px 0px 5px 0px;
 }
 
-/* line 287, ../sass/cards.scss */
+/* line 290, ../sass/cards.scss */
 .cardContent p {
   color: #333333;
   text-align: left;
@@ -281,7 +286,30 @@
   margin: 0;
 }
 
-/* line 294, ../sass/cards.scss */
+/* line 296, ../sass/cards.scss */
+.cardContent li {
+  color: #333333;
+  text-align: left;
+  padding-right: 20px;
+}
+
+/* line 302, ../sass/cards.scss */
+.cardContent h1 {
+  color: #333333;
+  text-align: left;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+}
+
+/* line 308, ../sass/cards.scss */
+.cardContent h2 {
+  color: #333333;
+  text-align: left;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+}
+
+/* line 314, ../sass/cards.scss */
 .cardContent-1-8 p {
   color: #333333;
   text-align: left;
@@ -289,7 +317,7 @@
   margin: 0;
 }
 
-/* line 301, ../sass/cards.scss */
+/* line 321, ../sass/cards.scss */
 .cardContent h3 {
   color: #333333;
   text-align: left;
@@ -297,19 +325,19 @@
   margin: 0;
 }
 
-/* line 307, ../sass/cards.scss */
+/* line 327, ../sass/cards.scss */
 .client-desc h3, .client-desc p {
   text-align: center !important;
 }
 
-/* line 311, ../sass/cards.scss */
+/* line 331, ../sass/cards.scss */
 .cardContent a {
   color: #C0392B;
   /*text-align: left;
   padding: $pPadding;*/
 }
 
-/* line 316, ../sass/cards.scss */
+/* line 336, ../sass/cards.scss */
 .centerer {
   display: inline-block;
   height: 100%;

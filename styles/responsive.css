@@ -10,19 +10,24 @@
   #pageContainerMobile {
     display: none;
   }
+
+  /* line 40, ../sass/responsive.scss */
+  #panel {
+    display: none;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 800px) {
   /*** MENU ***/
-  /* line 48, ../sass/responsive.scss */
+  /* line 51, ../sass/responsive.scss */
   header {
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
 
-  /* line 53, ../sass/responsive.scss */
+  /* line 56, ../sass/responsive.scss */
   #panel {
     width: 100%;
-    height: 90vh;
+    height: 50vh;
     top: 10%;
     position: absolute;
     z-index: 5;
@@ -31,7 +36,7 @@
     transition-timing-function: ease-in-out;
   }
 
-  /* line 64, ../sass/responsive.scss */
+  /* line 67, ../sass/responsive.scss */
   .menu-open {
     left: 0 !important;
     width: 100%;
@@ -50,34 +55,34 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
   }
-  /* line 99, ../sass/responsive.scss */
+  /* line 102, ../sass/responsive.scss */
   h1, h2, h3, h4, h5, h6, p, a, span {
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 0px;
   }
 
-  /* line 104, ../sass/responsive.scss */
+  /* line 107, ../sass/responsive.scss */
   h2 {
     font-weight: 200;
   }
 
-  /* line 108, ../sass/responsive.scss */
+  /* line 111, ../sass/responsive.scss */
   body {
     max-width: 100vw;
     max-height: 100vh;
   }
 
-  /* line 113, ../sass/responsive.scss */
+  /* line 116, ../sass/responsive.scss */
   #pageContainer {
     display: none;
   }
 
-  /* line 117, ../sass/responsive.scss */
+  /* line 120, ../sass/responsive.scss */
   #siteContainer {
     display: none !important;
   }
 
-  /* line 121, ../sass/responsive.scss */
+  /* line 124, ../sass/responsive.scss */
   .contentContainer {
     max-width: 100vw;
     width: 95%;
@@ -85,46 +90,47 @@
     margin-right: 2.5%;
   }
 
-  /* line 127, ../sass/responsive.scss */
+  /* line 130, ../sass/responsive.scss */
   .subPageContentContainer {
     padding-top: 20%;
+    padding-bottom: 5%;
   }
 
-  /* line 131, ../sass/responsive.scss */
+  /* line 135, ../sass/responsive.scss */
   #pageContainerMobile {
     width: 100vw;
     height: 100vh;
   }
 
-  /* line 135, ../sass/responsive.scss */
+  /* line 139, ../sass/responsive.scss */
   #siteContainerMobile {
     width: 100%;
   }
 
-  /* line 140, ../sass/responsive.scss */
+  /* line 144, ../sass/responsive.scss */
   .homepageMobile {
     background-color: #ECF0F1;
   }
 
-  /* line 143, ../sass/responsive.scss */
+  /* line 147, ../sass/responsive.scss */
   .portraitNameContainer {
     height: 51vh;
   }
 
-  /* line 146, ../sass/responsive.scss */
+  /* line 150, ../sass/responsive.scss */
   .portraitContainer img {
     max-width: 100%;
     max-height: 100vh;
   }
 
-  /* line 150, ../sass/responsive.scss */
+  /* line 154, ../sass/responsive.scss */
   .portraitContainer {
     position: absolute;
     right: 0%;
     top: 0;
   }
 
-  /* line 156, ../sass/responsive.scss */
+  /* line 160, ../sass/responsive.scss */
   .nameContainer {
     position: absolute;
     max-width: 100%;
@@ -133,25 +139,25 @@
     left: 10%;
   }
 
-  /* line 163, ../sass/responsive.scss */
+  /* line 167, ../sass/responsive.scss */
   .malte {
     left: -10%;
     right: 50%;
   }
 
-  /* line 167, ../sass/responsive.scss */
+  /* line 171, ../sass/responsive.scss */
   .janosch {
     left: -7.5%;
     right: 45%;
   }
 
-  /* line 171, ../sass/responsive.scss */
+  /* line 175, ../sass/responsive.scss */
   .grapentin {
     left: -5%;
     right: 40%;
   }
 
-  /* line 176, ../sass/responsive.scss */
+  /* line 180, ../sass/responsive.scss */
   .menuListContainerMobileOpen {
     position: absolute;
     top: 0;
@@ -161,7 +167,12 @@
     background-color: #ECF0F1;
   }
 
-  /* line 185, ../sass/responsive.scss */
+  /* line 189, ../sass/responsive.scss */
+  .invisible {
+    overflow: hidden;
+  }
+
+  /* line 193, ../sass/responsive.scss */
   .menuListContainerMobile {
     position: absolute;
     bottom: 0;
@@ -171,7 +182,7 @@
     background-color: #ECF0F1;
   }
 
-  /* line 194, ../sass/responsive.scss */
+  /* line 202, ../sass/responsive.scss */
   .menuListContainerMobile h1, .headerMobile h1, .menuListContainerMobileOpen h1 {
     text-align: center;
     color: #FFFFFF;
@@ -183,12 +194,12 @@
     vertical-align: middle;
   }
 
-  /* line 205, ../sass/responsive.scss */
+  /* line 213, ../sass/responsive.scss */
   .table-center {
     display: table;
   }
 
-  /* line 208, ../sass/responsive.scss */
+  /* line 216, ../sass/responsive.scss */
   .menuHomeMobile {
     background-color: #ECF0F1;
     position: absolute;
@@ -199,7 +210,7 @@
     bottom: 80%;
   }
 
-  /* line 217, ../sass/responsive.scss */
+  /* line 225, ../sass/responsive.scss */
   .menuHomeMobile img {
     width: 10%;
     position: absolute;
@@ -207,7 +218,7 @@
     top: 30%;
   }
 
-  /* line 224, ../sass/responsive.scss */
+  /* line 232, ../sass/responsive.scss */
   .menuServicesMobile {
     background-color: #3498DB;
     position: absolute;
@@ -218,7 +229,7 @@
     bottom: 60%;
   }
 
-  /* line 233, ../sass/responsive.scss */
+  /* line 241, ../sass/responsive.scss */
   .menuServicesMobile img {
     width: 10%;
     position: absolute;
@@ -226,7 +237,7 @@
     top: 30%;
   }
 
-  /* line 239, ../sass/responsive.scss */
+  /* line 247, ../sass/responsive.scss */
   .menuWorkMobile {
     background-color: #FEC606;
     position: absolute;
@@ -237,7 +248,7 @@
     bottom: 40%;
   }
 
-  /* line 248, ../sass/responsive.scss */
+  /* line 256, ../sass/responsive.scss */
   .menuWorkMobile img {
     width: 10%;
     position: absolute;
@@ -245,7 +256,7 @@
     top: 30%;
   }
 
-  /* line 254, ../sass/responsive.scss */
+  /* line 262, ../sass/responsive.scss */
   .menuAboutMobile {
     background-color: #FD5B03;
     position: absolute;
@@ -256,7 +267,7 @@
     bottom: 20%;
   }
 
-  /* line 263, ../sass/responsive.scss */
+  /* line 271, ../sass/responsive.scss */
   .menuAboutMobile img {
     width: 10%;
     position: absolute;
@@ -264,7 +275,7 @@
     top: 30%;
   }
 
-  /* line 269, ../sass/responsive.scss */
+  /* line 277, ../sass/responsive.scss */
   .menuContactMobile {
     background-color: #ECF0F1;
     position: absolute;
@@ -275,7 +286,7 @@
     bottom: 0%;
   }
 
-  /* line 278, ../sass/responsive.scss */
+  /* line 286, ../sass/responsive.scss */
   .menuContactMobile img {
     width: 10%;
     position: absolute;
@@ -283,12 +294,12 @@
     top: 30%;
   }
 
-  /* line 284, ../sass/responsive.scss */
+  /* line 292, ../sass/responsive.scss */
   .menuContactMobile h1, .menuHomeMobile h1 {
     color: #333333;
   }
 
-  /* line 288, ../sass/responsive.scss */
+  /* line 296, ../sass/responsive.scss */
   .headerMobile {
     width: 100vw;
     height: 10%;
@@ -297,33 +308,63 @@
     z-index: 7;
   }
 
-  /* line 295, ../sass/responsive.scss */
+  /* line 303, ../sass/responsive.scss */
   .headerMobile img {
     height: 100%;
     position: absolute;
     right: 2%;
   }
 
-  /* line 300, ../sass/responsive.scss */
+  /* line 308, ../sass/responsive.scss */
   .headerMobile h1 {
     text-align: right;
     padding-right: 5%;
   }
 
-  /* line 305, ../sass/responsive.scss */
+  /* line 313, ../sass/responsive.scss */
   .menu-button-icon {
     position: absolute;
     left: 3%;
     top: 30%;
   }
 
-  /* line 310, ../sass/responsive.scss */
+  /* line 318, ../sass/responsive.scss */
+  .hamburger {
+    margin: 1% !important;
+  }
+
+  /* line 321, ../sass/responsive.scss */
   .hamburger-label {
     padding-left: 123%;
   }
 
-  /* line 315, ../sass/responsive.scss */
+  /* line 325, ../sass/responsive.scss */
   .serviceMobile {
     background-color: #3498DB;
+  }
+
+  /* line 328, ../sass/responsive.scss */
+  .workMobile {
+    background-color: #FEC606;
+  }
+
+  /* line 331, ../sass/responsive.scss */
+  .work-card {
+    line-height: 100px;
+  }
+
+  /* line 334, ../sass/responsive.scss */
+  .aboutMobile {
+    background-color: #FD5B03;
+  }
+
+  /* line 337, ../sass/responsive.scss */
+  .contactMobile {
+    background-color: #ECF0F1;
+  }
+
+  /* line 340, ../sass/responsive.scss */
+  .cardContent-1-1 p {
+    text-align: center;
   }
 }

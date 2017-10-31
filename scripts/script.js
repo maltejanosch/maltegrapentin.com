@@ -215,6 +215,7 @@ var $hamburger = $(".hamburger");
     $hamburger.toggleClass("is-active");
     $('#panel').toggleClass("menu-open");
     $('#menu').toggleClass("menuButton-open");
+    $('#pageContainerMobile').toggleClass('invisible');
   });
 }
 
