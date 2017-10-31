@@ -354,17 +354,71 @@
   }
 
   /* line 334, ../sass/responsive.scss */
+  .work-card img {
+    width: 38%;
+  }
+
+  /* line 337, ../sass/responsive.scss */
+  .cardImageFull img {
+    width: 50%;
+    padding: 5%;
+  }
+
+  /* line 341, ../sass/responsive.scss */
+  .bottomLine {
+    height: 10px;
+  }
+
+  /* line 344, ../sass/responsive.scss */
+  .backButtonMobile {
+    position: relative;
+  }
+
+  /* line 348, ../sass/responsive.scss */
+  .backButtonMobile h2 {
+    color: #FFFFFF;
+  }
+
+  /* line 351, ../sass/responsive.scss */
+  .client-card {
+    line-height: 100px;
+  }
+
+  /* line 355, ../sass/responsive.scss */
+  .client-card img {
+    width: 50%;
+    vertical-align: middle;
+    padding-left: 25%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+  }
+
+  /* line 362, ../sass/responsive.scss */
   .aboutMobile {
     background-color: #FD5B03;
   }
 
-  /* line 337, ../sass/responsive.scss */
+  /* line 365, ../sass/responsive.scss */
   .contactMobile {
     background-color: #ECF0F1;
+    height: 100%;
   }
 
-  /* line 340, ../sass/responsive.scss */
+  /* line 369, ../sass/responsive.scss */
   .cardContent-1-1 p {
     text-align: center;
+  }
+
+  /* line 372, ../sass/responsive.scss */
+  .cardContent a {
+    text-decoration: none;
+  }
+
+  /* line 375, ../sass/responsive.scss */
+  #map {
+    height: 100%;
+    width: 100%;
+    min-width: 100px;
+    min-height: 300px;
   }
 }

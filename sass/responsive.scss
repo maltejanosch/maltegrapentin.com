@@ -331,15 +331,53 @@ body{
 	.work-card {
     	line-height: 100px;
 	}
+	.work-card img{
+		width: 38%;
+	}
+	.cardImageFull img {
+    	width: 50%;
+    	padding: 5%;
+	}
+	.bottomLine{
+		height: 10px;
+	}
+	.backButtonMobile{
+		position: relative;
+	}
+
+	.backButtonMobile h2{
+		color: $real-white;
+	}
+	.client-card{
+		line-height: 100px;
+	}
+
+	.client-card img{
+		width: 50%;
+	    vertical-align: middle;
+	    padding-left: 25%;
+	    padding-right: 10%;
+	    padding-bottom: 1%;
+	}
 	.aboutMobile{
 		background-color: $orange;
 	}
 	.contactMobile{
 		background-color: $cloud;
+		    height: 100%;
 	}
 	.cardContent-1-1 p{
 		text-align: center;
 	}
+	.cardContent a{
+		text-decoration: none;
+	}
+	#map{
+	    height: 100%;
+    width: 100%;
+    min-width: 100px;
+    min-height: 300px;
+}
 
 
 }
